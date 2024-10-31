@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'culinaria';
+    src: url('fonts/culinaria.woff2') format('woff2'),
+         url('fonts/culinaria.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor0:#F2EAE4;
+    --cor1:#D9CBBF;
+    --cor2:#A6866A;
+    --cor3:#734E38;
+    --cor4:#736F36; 
+
+    --fonte-padrao: arial, verdana, sans-serif, helvetica; 
+    --fonte-titulo: 'culinaria'
+}
+body{
+    background-color: var(--cor2);
+}
+header{
+    background-color: var(--cor1);
+    
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
+}
+header h1{
+    margin: auto;
+    text-align: center;
+    margin-bottom:  25px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.555);
+    padding: 40px;
+}
+main{ 
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto; 
+    background-color: #F2EAE4;
+    box-shadow: 0px 0px 5px black;
+    margin-bottom: 30px;
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px ;
+}
+img{
+    margin: auto;
+    display: block;
+}
+main p{
+    padding: 15px;
+    font-size: 1.2em; 
+    padding-left: 10px;
+    padding-right: 10px;
+}
+main h2{
+    padding: 15px;
+}
+main img{
+    padding-bottom: 20px ;
+}
+nav{
+    background-color: #886d56cc;
+    padding: 10px;
+}
+nav a{
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    margin: 5px;
+}
+nav a:hover{
+    background-color: var(--cor2);
+}
+aside{
+    margin: 0px;
+    padding: 15px;
+    font-size: 1.2em; 
+    padding: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.411);
+    
+    
+}
+aside h2{
+    background-color: var(--cor1);
+}
+ul{
+    background-color: var(--cor2);
+    list-style-type: '🗸 ';
+    list-style-position:  inside;
+}
+footer{
+    background-color: var(--cor3);
+    margin: auto;
+}
+footer p{
+    color: white;
+    text-align: center;
+}
+footer a{
+    color: white;
+}
+footer a:hover{
+    background-color: var(--cor4
+    );
+}
+@media screen and (max-width: 580px){
+   .colaborador img{
+    width: 30%;
+   }
+    
+}
